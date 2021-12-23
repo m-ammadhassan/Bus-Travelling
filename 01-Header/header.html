@@ -12,16 +12,52 @@
     <header class="container">
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="Logo">
+                <img src="../images/logo.png" alt="Logo">
                 <h1>HR Travels</h1>
             </div>
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">About Us</a>
+                <a href="#" class="link">Contact Us</a>
             </div>
         </nav>
-        <section class="main"></section>
+        <section class="main">
+            <div class="main-content container">
+                <p>Most efficient and convenient way to book Bus Ticket</p>
+                <h1>Online Bus Ticket Registration</h1>
+                <div class="booking-form">
+                    <form action="">
+                        <select name="departure_city" id="departure_city" required>
+                            <option disabled selected>Departure City</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="karachi">Karachi</option>
+                        </select>
+                        <select name="arrival_city" id="arrival_city" required>
+                            <option disabled selected>Arrival City</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="karachi">Karachi</option>
+                        </select>
+                        <!--<input type="date" placeholder="Select Date" min="2021-12-24" max="2021-12-31" required>-->
+                        <select name="" id="">
+                            <option disabled selected>Select Date</option>
+                            <option value="24-12-2021">24-12-2021</option>
+                            <option value="25-12-2021">25-12-2021</option>
+                            <option value="26-12-2021">26-12-2021</option>
+                            <option value="27-12-2021">27-12-2021</option>
+                            <option value="28-12-2021">28-12-2021</option>
+                            <option value="29-12-2021">29-12-2021</option>
+                            <option value="30-12-2021">30-12-2021</option>
+                            <option value="31-12-2021">31-12-2021</option>
+                        </select>
+                        <button>Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </header>
     <!--Header Section Ends Here-->
 </body>
