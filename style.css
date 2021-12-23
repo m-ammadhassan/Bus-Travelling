@@ -4,35 +4,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-a
-{
-    color: white;
-    text-decoration: none;
-}
-
-nav
-{
-    background-color: #2e86de;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav .logo
-{
-    display: flex;
-    align-items: center;
-}
-
-nav .logo img
-{
-    width: 20%;
-}
-
-nav .menu a
-{
-    font-size: 1.25em;
-    margin: 0 20px;
-}
