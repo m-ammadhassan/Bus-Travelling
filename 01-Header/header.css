@@ -41,6 +41,7 @@ nav
     width: 6vw;
     height: 10vh;
     margin: 0 20px 0 0;
+    /*margin: top right bottom left */
 }
 
 .logo h1
@@ -51,6 +52,7 @@ nav
 .menu a
 {
     padding: 10px 20px;
+    /*padding: top+bottom   right+left*/
 }
 
 .menu a:hover
@@ -94,7 +96,7 @@ nav
     margin: 0 0 50px 0;
 }
 
-.booking-form select, .booking-form input[type="date"]
+.booking-form select
 {
     width: 200px;
     background-color: rgba(0, 0, 0, 0.4);
