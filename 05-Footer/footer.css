@@ -4,5 +4,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 /*Footer Section Starts Here*/
+footer .top
+{
+    height: 50vh;
+    background: url('images/bus-terminal.jpg');
+    background-size: 100% 120%;  /*background-size: width height;*/
+    background-position: top;
+    
+}
+
+footer .top .top-content
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer .bottom
+{
+    height: 50vh;
+}
 /*Footer Section Ends Here*/
