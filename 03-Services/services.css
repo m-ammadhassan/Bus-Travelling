@@ -4,5 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Services Section Starts Here*/
+/*Services Section Starts Here*/ 
+
+.service h1{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-left: 15%;
+}
+.service p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15%;
+}
+
+.servicesimg{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 40px;
+    padding-left: 15%;
+}
+.servicesimage img{
+    border-radius: 10px;
+    height: 300px;
+}
+
+
+
+
+
 /*Services Section Ends Here*/
