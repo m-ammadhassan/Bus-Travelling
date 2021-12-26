@@ -26,18 +26,21 @@
     gap: 20px;
     padding-top: 40px;
     padding-left: 15%;
+    position: absolute;
 }
 .servicesimage img{
     border-radius: 10px;
     height: 300px;
 }
 .card{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     gap: 50px;
-    margin-top: -50px;
+    position: relative;
+    top: 250px;
 }
 table{
     line-height: 2.4rem;
@@ -45,6 +48,7 @@ table{
     height: 180px;
 }
 .card table{
+    background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 25px;
