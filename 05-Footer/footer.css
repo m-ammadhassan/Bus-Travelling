@@ -17,10 +17,60 @@
     flex-wrap: wrap;
 }
 
+.col
+{
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col h2
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    word-spacing: 4px;
+}
+
+.col ul
+{
+    margin: 15px 0 0 0;
+}
+
+.col li
+{
+    list-style: none;
+    margin: 15px 0 0 0;
+}
+
+.col a
+{
+    color: #8c929b;
+    font-size: 1.25em;
+}
+
 .link
 {
     color: whitesmoke;
     text-decoration: none;
+}
+
+.social-icons
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.social-icons a
+{
+    margin: 0 5px;
+}
+
+.social-icons a img
+{
+    max-height: 4vh;
 }
 
 /*Footer Section Starts Here*/
@@ -30,18 +80,137 @@ footer .top
     background: url('images/bus-terminal.jpg');
     background-size: 100% 120%;  /*background-size: width height;*/
     background-position: top;
-    
 }
 
-footer .top .top-content
+.top-content
 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 150px;
+}
+
+.newsletter
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.newsletter-form
+{
+    width: 100%;
+}
+
+.newsletter-form form
+{
+    display: flex;
+    justify-content: center;
+}
+
+.form-control input
+{
+    min-width: 280px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.newsletter-form button
+{
+    width: 20%;
+    display: block;
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 1em;
+    border: 2px solid orangered;
 }
 
 footer .bottom
 {
-    height: 50vh;
+    min-height: 50vh;
+}
+
+.bottom .bottom-content
+{
+    min-height: 40vh;
+    background-color: #222f3e;
+    display: flex;
+    padding: 40px;
+}
+
+.address
+{
+    align-items: center;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 6vw;
+    height: 10vh;
+    margin: 0 20px 0 0;
+    /*margin: top right bottom left */
+}
+
+.logo h1
+{
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.logo h1 span
+{
+    color: orangered;
+}
+
+.address p
+{
+    color: whitesmoke;
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin: 10px 0 0 0;
+}
+
+.support, .links, .social
+{
+    align-items: center;
+}
+
+
+.social > a
+{
+    margin: 30px 0 5px 0;
+}
+
+.bottom .copyright
+{
+    min-height: 10vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright span
+{
+    color: whitesmoke;
+    font-size: 1.1em;
 }
 /*Footer Section Ends Here*/
