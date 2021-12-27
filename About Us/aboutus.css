@@ -6,4 +6,72 @@
 }
 
 /*About Us Page Starts Here*/
+.stuff h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.stuff p{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about h1{
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 2rem;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.lead h1{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+    
+}
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    
+    
+}
+.card1 img{
+    width: 200px;
+    height: 150px;
+    border-radius: 90px;
+    display: block;
+    width: 50%;
+    
+}
+.card1 h1{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+.card1 h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.card1 p{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
 /*About Us Page Ends Here*/
