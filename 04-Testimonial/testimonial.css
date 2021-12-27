@@ -4,48 +4,120 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Testimonial Section Starts Here*/
-.heading{
-    padding: 2px;
-    text-align: center;
-}
-body{
+
+.container
+{
     height: 100vh;
+    width: 100%;
 }
-.qomma{
+
+.row
+{
+    padding: 0 150px;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Testimonial Section Starts Here*/
+.testimonial-title
+{
+    height: 20vh;
+}
+.testimonial-title h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+.testimonial-content
+{
+    height: 50vh;
+    flex-wrap: nowrap;
+}
+.testimonial-content-image
+{
+    width: 40vw;
+    
+}
+.testimonial-content-image img
+{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+.testimonial-content-card
+{
+    width: 60vw;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px 80px;
+}
+.testimonial-content-card h3
+{
     color: #FFDB58;
+    font-size: 4em;
+    font-size-adjust: 0 0 0 0 0;
 }
 
-.main-content{
-    display: flex;
-    padding: 10px ;
+.card-user
+{
     width: 100%;
-    height: 250px
-    
+    justify-content: start;
+    margin: 20px 0 0 0;
+}
 
+.card-image
+{
+    background-color: orangered;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
 }
-.main-text{
-    padding: 25px 0px 0px 50px;
-    width: 100%;
-    height: 50%;
-    margin: 10px 20px 10px 20px;
+
+.card-image img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
 }
-.bus-image{
-    padding: 30px 50px 50px 30px;
-    display: flex
+
+.card-content h4
+{
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
 }
-.image{
-    padding: 30px 50px 50px 30px;
-    display: flex;
-    
+
+.card-content h5
+{
+    font-size: 1em;
+    color: #636e72;
 }
-.data{
-    padding: 8px ;
-    margin-left: 0;
+
+.testimonial-content-card p
+{
+    font-size: 1.25em;
+    text-align: justify;
 }
-.logo{
-    text-align: center;
-    
+.testimonial-companies
+{
+    justify-content: space-around;
+    min-height: 30vh;
+}
+
+.testimonial-companies img
+{
+    width: 12vw;
 }
 
 /*Testimonial Section Ends Here*/

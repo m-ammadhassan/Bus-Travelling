@@ -48,7 +48,6 @@
 {
     font-size: 2.25em;
     text-align: center;
-    text-transform: capitalize;
     letter-spacing: 2px;
 }
 
@@ -84,8 +83,6 @@
     margin-bottom: 30px;
 }
 
-/*Leadership Section Ends Here*/
-
 .cards{
     width: 100%;
     justify-content: space-around;
@@ -111,7 +108,6 @@
     width: inherit;
     height: inherit;
     border-radius: inherit;
-    border: 2px solid black;
 }
 
 .card h2{
@@ -130,5 +126,6 @@
 .card p{
     font-size: 1.1em;
 }
+/*Leadership Section Ends Here*/
 
 /*About Us Page Ends Here*/
