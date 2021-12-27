@@ -40,7 +40,7 @@
 }
 .intro-content, .leader-content
 {
-    min-height: 80vh;
+    min-height: 85vh;
     background-color: whitesmoke;
     padding: 20px 100px;
 }
@@ -90,7 +90,7 @@
 .card{
     width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 10px;   
     text-align: center;  
 }
@@ -111,7 +111,7 @@
 }
 
 .card h2{
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 20px 0 0 0;
 }
@@ -125,6 +125,22 @@
 
 .card p{
     font-size: 1.1em;
+}
+
+.social-icons
+{
+    margin: 20px 0 0 0;
+}
+
+.social-icons a
+{
+    margin: 0 10px;
+}
+
+.social-icons a img
+{
+    width: 2vw;
+    height: 4vh;
 }
 /*Leadership Section Ends Here*/
 
