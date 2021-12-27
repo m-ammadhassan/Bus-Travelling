@@ -92,6 +92,11 @@
     text-align: left;
 }
 
+.card-content table td ul
+{
+    margin: 0 0 0 20px;
+}
+
 .progress-bar
 {
     background-color: #ecf0f1;
