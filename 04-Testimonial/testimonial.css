@@ -40,6 +40,7 @@
     font-size: 2.25em;
     font-weight: bold;
 }
+
 .testimonial-content
 {
     height: 50vh;
@@ -48,7 +49,6 @@
 .testimonial-content-image
 {
     width: 40vw;
-    
 }
 .testimonial-content-image img
 {
