@@ -86,6 +86,11 @@ nav
     color: whitesmoke;
 }
 
+.dropdown
+{
+    display: none;
+}
+
 .main
 {
     background-image: url('images/bus.jpg');
@@ -161,3 +166,27 @@ nav
 }
 
 /*Header Section Ends Here*/
+
+/*Responsive CSS Starts Here*/
+@media only screen and (max-width: 820px) {
+    nav .menu
+    {
+        display: none;
+    }
+
+    nav .dropdown
+    {
+        display: block;
+    }
+
+    nav .dropdown a
+    {
+        font-size: 30px;
+    }
+
+    .booking-form button
+    {
+        margin-top: 20px;
+    }
+  }
+/*Responsive CSS Ends Here*/
