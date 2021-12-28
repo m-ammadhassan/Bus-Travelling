@@ -55,15 +55,18 @@ nav
 
 .logo h1
 {
-    color: white;
+    color: orangered;
     text-transform: uppercase;
     word-spacing: 5px;
     letter-spacing: 2px;
+
 }
 
 .logo h1 span
 {
-    color: orangered;
+    display: block;
+    color: whitesmoke;
+    margin-top: -8px;
 }
 
 .menu a
