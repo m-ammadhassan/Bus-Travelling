@@ -38,9 +38,13 @@
 .services
 {
     height: inherit;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+.services-head
+{
+    width: 100%;
 }
 
 .services-head h2

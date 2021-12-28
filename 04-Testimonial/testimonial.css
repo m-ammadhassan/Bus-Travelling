@@ -33,11 +33,13 @@
 }
 
 /*Testimonial Section Starts Here*/
-.testimonial-title
+.testimonial
 {
-    height: 20vh;
+    height: inherit;
+    justify-content: space-evenly;
 }
-.testimonial-title h2
+
+.testimonial-head h2
 {
     font-size: 2.25em;
     font-weight: bold;
@@ -45,7 +47,7 @@
 
 .testimonial-content
 {
-    height: 50vh;
+    width: 100%;
     flex-wrap: nowrap;
 }
 .testimonial-content-image
@@ -113,8 +115,8 @@
 }
 .testimonial-companies
 {
+    width: 100%;
     justify-content: space-around;
-    min-height: 30vh;
 }
 
 .testimonial-companies img
