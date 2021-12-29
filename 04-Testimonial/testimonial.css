@@ -15,7 +15,7 @@
 
 .row
 {
-    padding: 0 150px;
+    padding: 0 120px;
 }
 
 .flex
@@ -52,17 +52,17 @@
 }
 .testimonial-content-image
 {
-    width: 40vw;
+    max-width: 40vw;
 }
 .testimonial-content-image img
 {
-    width: 70%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 .testimonial-content-card
 {
-    width: 60vw;
+    max-width: 60vw;
     flex-direction: row;
     justify-content: start;
     padding: 20px 80px;
@@ -121,7 +121,7 @@
 
 .testimonial-companies img
 {
-    width: 12vw;
+    max-width: 150px;
 }
 
 /*Testimonial Section Ends Here*/
@@ -130,12 +130,60 @@
 @media only screen and (max-width: 1025px) {
     .row
     {
-        padding: 0 50px;
+        padding: 10px 50px;
     }
 }
 
-@media only screen and (max-width: 769px) {
-    
+@media only screen and (max-width: 768px) {
+    .row
+    {
+        padding: 20px;
+    }
+
+    .testimonial-content
+    {
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .testimonial-content-image, .testimonial-content-card
+    {
+        max-width: 100%;
+    }
+
+    .testimonial-content-card
+    {
+        padding: 20px;
+    }
+
+    .testimonial-content-image img
+    {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .testimonial-companies img
+    {
+        max-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 481px){
+    .testimonial-content-image img
+    {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .card-user
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-content
+    {
+        margin-top: 10px;
+    }
 }
 
 /*Responsive Code Ends Here*/
