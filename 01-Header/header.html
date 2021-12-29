@@ -11,8 +11,8 @@
 <body>
     <!--Header Section Starts Here-->
     <header class="container">
-        <nav class="row">
-            <div class="logo">
+        <nav class="row flex">
+            <div class="flex logo">
                 <img src="../images/logo.png" alt="Logo">
                 <h1>H.A.Y.<span>Travels</span></h1>
             </div>
@@ -25,12 +25,13 @@
                 <a href="javascript:void(0);" class="link" onclick="dropdown();">&#9776;</a>
             </div> 
         </nav>
+
         <section class="main">
-            <div class="main-content row">
+            <div class="main-content row flex">
                 <p>Most efficient and convenient way to book Bus Ticket</p>
                 <h1>Online Bus Ticket Registration</h1>
                 <div class="booking-form">
-                    <form method="post">
+                    <form class="flex" method="post">
                         <select name="departure_city" id="departure_city" required>
                             <option disabled selected>Departure City</option>
                             <option value="lahore">Lahore</option>
@@ -48,10 +49,8 @@
                             <option value="layyah">Layyah</option>
                         </select>
                         <!--<input type="date" placeholder="Select Date" min="2021-12-24" max="2021-12-31" required>-->
-                    
                         <select name="booking_date" id="booking_date">
                             <option disabled selected>Select Date</option>
-                            <option value="28-12-2021">28-12-2021</option>
                             <option value="29-12-2021">29-12-2021</option>
                             <option value="30-12-2021">30-12-2021</option>
                             <option value="31-12-2021">31-12-2021</option>
