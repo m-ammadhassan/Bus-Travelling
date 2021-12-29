@@ -122,11 +122,11 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .row
     {
-        padding: 10px;
+        padding: 20px;
     }
 
     .work-cards
@@ -137,9 +137,10 @@
     .work-cards .card
     {
         max-width: 80%;
-        margin: 20px 0 0 0;
+        margin: 20px 0;
     }
     
 }
+
 
 /*Responsive Code Ends Here*/
