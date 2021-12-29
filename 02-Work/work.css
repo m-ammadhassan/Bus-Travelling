@@ -40,19 +40,18 @@
     justify-content: space-evenly;
 }
 
-.work-head
+.section-head
 {
     text-align: center;
-    padding: 0 100px;
 }
 
-.work-head h2
+.section-head h2
 {
     font-size: 2.25em;
     font-weight: bold;
 }
 
-.work-head p
+.section-head p
 {
     font-size: 1.25em;
     line-height: 1.2;
@@ -67,7 +66,7 @@
 
 .card
 {
-    width: 30%;
+    max-width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
@@ -119,11 +118,27 @@
 @media only screen and (max-width: 1025px) {
     .row
     {
-        padding: 0 50px;
+        padding: 10px 50px;
     }
 }
 
 @media only screen and (max-width: 767px) {
+
+    .row
+    {
+        padding: 10px;
+    }
+
+    .work-cards
+    {
+        flex-direction: column;
+    }
+
+    .work-cards .card
+    {
+        max-width: 80%;
+        margin: 20px 0 0 0;
+    }
     
 }
 
