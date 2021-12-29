@@ -1,6 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+    width: 100%;
+}
+
+.row
+{
+    padding: 50px 120px;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Header Section Starts Here*/
+nav
+{
+    background: linear-gradient(#2e3235, #222f3e);
+    height: 15vh;
+}
+
+nav.row
+{
+    padding: 0 120px;
+}
+
+nav.flex
+{
+    justify-content: space-between;
+}
+
+.logo img
+{
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 0 0;
+    /*margin: top right bottom left */
+}
+
+.logo h1
+{
+    color: orangered;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo h1 span
+{
+    display: block;
+    color: whitesmoke;
+    margin-top: -8px;
+}
+
+.menu a
+{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    /*padding: top+bottom   right+left*/
+}
+
+.menu .active, .menu a:hover:not(.active)
+{
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+}
+
+.menu a:hover:not(.active)
+{
+    color: whitesmoke;
+}
+
+.dropdown
+{
+    display: none;
+}
+
+.main
+{
+    background-image: url('images/bus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+.main-content
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.main-content h1
+{
+    color: white;
+    font-size: 3em;
+    margin: 0 0 50px 0;
+}
+
+.main-content p
+{
+    color: white;
+    font-size: 1.25em;
+    margin: 0 0 20px 0;
+}
+
+.booking-form
+{
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+
+.booking-form select, .booking-form input
+{
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    margin: 0 5px;
+    outline: none;
+    border: 2px solid orangered;
+}
+
+.booking-form select option:first-child
+{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.booking-form select option
+{
+    background-color: black;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.booking-form button
+{
+    width: 180px;
+    padding: 10px 0;
+    margin: 0 0 0 5px;
+    font-size: 1.1em;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+
+/*Header Section Ends Here*/
+
+
+
+/*Work Section Starts Here*/
+.work
+{
+    height: inherit;
+    justify-content: space-evenly;
+}
+
+.section-head
+{
+    text-align: center;
+}
+
+.section-head h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.section-head p
+{
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.work-cards
+{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card
+{
+    max-width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card-image img
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content
+{
+    padding: 10px 20px;
+}
+
+.card-content h3
+{
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+
+.card-content p
+{
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.card-button
+{
+    margin: 20px 0 10px 0;
+}
+
+.card-button button
+{
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 1em;
+    display: block;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+/*Work Section Ends Here*/
+
+
+
+/*Services Section Starts Here*/ 
+
+.services
+{
+    height: inherit;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.section-head
+{
+    width: 100%;
+    text-align: center;
+}
+
+.section-head h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.section-head p
+{
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.services-cards
+{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.services-cards .card
+{
+    max-width: 45%;
+}
+
+.services-cards .card-image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.services-cards .card-content
+{
+    max-width: 80%;
+    margin-top: -80px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.services-cards .card-content table
+{
+    width: 100%;
+    padding: 25px;
+}
+
+.services-cards .card-content table th
+{
+    width: 30%;
+    text-align: left;
+}
+
+.services-cards .card-content table td ul
+{
+    margin: 0 0 0 20px;
+}
+
+.progress-bar
+{
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 26px;
+    border: 2px solid #242323;
+    border-radius: 10px;
+    margin: 4px 0 0 0;
+}
+
+.progress
+{
+    background-color: orangered;
+    height: 22px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.progress span
+{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/*Services Section Ends Here*/
+
+
+/*Testimonial Section Starts Here*/
+.testimonial
+{
+    height: inherit;
+    justify-content: space-evenly;
+}
+
+.testimonial-head h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.testimonial-content
+{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.testimonial-content-image
+{
+    max-width: 40vw;
+}
+.testimonial-content-image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.testimonial-content-card
+{
+    max-width: 60vw;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px 80px;
+}
+.testimonial-content-card h3
+{
+    color: #FFDB58;
+    font-size: 4em;
+    font-size-adjust: 0 0 0 0 0;
+}
+
+.testimonial-content-card .card-user
+{
+    width: 100%;
+    justify-content: start;
+    margin: 20px 0 0 0;
+}
+
+.testimonial-content-card .card-image
+{
+    background-color: orangered;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+.testimonial-content-card .card-image img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.testimonial-content-card .card-content h4
+{
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
+}
+
+.testimonial-content-card .card-content h5
+{
+    font-size: 1em;
+    color: #636e72;
+}
+
+.testimonial-content-card p
+{
+    font-size: 1.25em;
+    text-align: justify;
+}
+.testimonial-companies
+{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.testimonial-companies img
+{
+    max-width: 150px;
+}
+
+/*Testimonial Section Ends Here*/
+
+
+
+.col
+{
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col h2
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    word-spacing: 4px;
+}
+
+.col ul
+{
+    margin: 15px 0 0 0;
+}
+
+.col li
+{
+    list-style: none;
+    margin: 15px 0 0 0;
+}
+
+.col a
+{
+    color: #8c929b;
+    font-size: 1.25em;
+}
+
+.link
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.social-icons
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.social-icons a
+{
+    margin: 0 5px;
+}
+
+.social-icons a img
+{
+    max-height: 4vh;
+}
+
+/*Footer Section Starts Here*/
+footer .top
+{
+    height: 50vh;
+    background: url('images/bus-terminal.jpg');
+    background-size: 100% 120%;  /*background-size: width height;*/
+    background-position: top;
+}
+
+.top-content
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.newsletter
+{
+    width: 45%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.newsletter-form
+{
+    width: 100%;
+}
+
+.newsletter-form form
+{
+    width: 100%;
+}
+
+.form-control
+{
+    width: 70%;
+}
+
+.form-control input
+{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.newsletter-form button
+{
+    width: 20%;
+    padding: 8px;
+    display: block;
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 1em;
+    border: 2px solid orangered;
+}
+
+footer .bottom
+{
+    min-height: 50vh;
+}
+
+.bottom .bottom-content
+{
+    min-height: 40vh;
+    background-color: #222f3e;
+    display: flex;
+    padding: 40px;
+}
+
+.address
+{
+    align-items: center;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 0 0;
+    /*margin: top right bottom left */
+}
+
+.logo h1
+{
+    color: orangered;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo h1 span
+{
+    display: block;
+    color: whitesmoke;
+    margin-top: -8px;
+}
+
+.address p
+{
+    color: whitesmoke;
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin: 10px 0 0 0;
+}
+
+.support, .links, .social
+{
+    align-items: center;
+}
+
+
+.social > a
+{
+    margin: 30px 0 5px 0;
+}
+
+.bottom .copyright
+{
+    text-align: center;
+    padding: 0 20px;
+    min-height: 10vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright span
+{
+    color: whitesmoke;
+    font-size: 1.1em;
+}
+/*Footer Section Ends Here*/
+

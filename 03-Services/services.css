@@ -67,19 +67,19 @@
     justify-content: space-between;
 }
 
-.card
+.services-cards .card
 {
     max-width: 45%;
 }
 
-.card-image img
+.services-cards .card-image img
 {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.card-content
+.services-cards .card-content
 {
     max-width: 80%;
     margin-top: -80px;
@@ -88,19 +88,19 @@
     border-radius: 10px;
 }
 
-.card-content table
+.services-cards .card-content table
 {
     width: 100%;
     padding: 25px;
 }
 
-.card-content table th
+.services-cards .card-content table th
 {
     width: 30%;
     text-align: left;
 }
 
-.card-content table td ul
+.services-cards .card-content table td ul
 {
     margin: 0 0 0 20px;
 }
@@ -166,12 +166,12 @@
         max-width: 100%;
     }
 
-    .card-content
+    .services-cards .card-content
     {
         max-width: 95%;
     }
 
-    .card-content table
+    .services-cards .card-content table
     {
         padding: 10px;
     }

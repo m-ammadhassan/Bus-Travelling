@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.link
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Contact Us Page Starts Here*/
+.contact
+{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left
+{
+    min-width: 40vw;
+    border: 2px solid orangered;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px 30px;
+}
+
+.contact-left h2, .contact-right h2
+{
+    font-size: 1.75em;
+}
+
+
+
+.contact-left form, .contact-items
+{
+
+    margin: 20px 0 0 0;
+}
+
+.contact-left form .form-control
+{
+    width: 100%;
+}
+
+.form-control input, .form-control textarea
+{
+    width: 100%;
+    font-size: 1em;
+    border: 2px solid #afb1b3;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    margin: 0 0 15px 0;
+    outline: none;
+    resize: none;
+}
+
+.form-control textarea
+{
+    font-size: 16px;
+}
+
+.contact-left form button
+{
+    background-color: orangered;
+    color: #ecf0f1;
+    width: 40%;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-right
+{
+    background-color: orangered;
+    min-width: 30vw;
+    border-radius: 10px;
+    padding: 60px 30px;
+}
+
+.contact-right h2
+{
+    color: whitesmoke;
+}
+
+.contact-item
+{
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.contact-logo
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 105, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
+.contact-logo img
+{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-text
+{
+    color: whitesmoke;
+    font-size: 1.25em;
+}
+
+.contact-text span
+{
+    font-weight: bolder;
+}
+
+.contact-text p
+{
+    display: inline;
+}
+
+/*Contact Us Page Ends Here*/
+
+/*Contact Page Responsive Start*/
+@media only screen and (max-width: 768px){
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-left, .contact-right
+    {
+        width: 80%;
+        min-height: max-content;
+        margin: 40px 0;
+    }
+
+    .contact-left
+    {
+        border: 2px solid orangered;
+        border-radius: 10px;
+    }
+
+    .contact-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-left form button
+    {
+        width: 100%;
+    }
+}
+/*Contact Page Responsive End*/

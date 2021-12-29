@@ -6,8 +6,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+    <!--Header Section Starts Here-->
+    <header class="container">
+        <nav class="row flex">
+            <div class="flex logo">
+                <img src="images/logo.png" alt="Logo">
+                <h1>H.A.Y.<span>Travels</span></h1>
+            </div>
+            <div class="menu" id="menu">
+                <a href="#" class="link active">Home</a>
+                <a href="about.html" target="_blank" class="link">About</a>
+                <a href="contact.html" target="_blank" class="link">Contact</a>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="link" onclick="dropdown();">&#9776;</a>
+            </div> 
+        </nav>
 
+        <section class="main">
+            <div class="main-content row flex">
+                <p>Most efficient and convenient way to book Bus Ticket</p>
+                <h1>Online Bus Ticket Registration</h1>
+                <div class="booking-form">
+                    <form class="flex" method="post">
+                        <select name="departure_city" id="departure_city" required>
+                            <option disabled selected>Departure City</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="layyah">Layyah</option>
+                        </select>
+                        <select name="arrival_city" id="arrival_city" required>
+                            <option disabled selected>Arrival City</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="layyah">Layyah</option>
+                        </select>
+                        <!--<input type="date" placeholder="Select Date" min="2021-12-24" max="2021-12-31" required>-->
+                        <select name="booking_date" id="booking_date">
+                            <option disabled selected>Select Date</option>
+                            <option value="29-12-2021">29-12-2021</option>
+                            <option value="30-12-2021">30-12-2021</option>
+                            <option value="31-12-2021">31-12-2021</option>
+                            <option value="31-12-2021">01-01-2022</option>
+                            <option value="31-12-2021">02-01-2022</option>
+                        </select>
+                    
+                        <button onclick="booking();">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--Header Section Ends Here-->
+
+    <!--Work Section Starts Here-->
+    <section class="container">
+        <div class="row flex work">
+            <div class="section-head">
+                <h2>How it works</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Mollitia, illo adipisci nemo assumenda sed, vero nam dicta 
+                    voluptate iste ullam exercitationem in eos
+                </p>
+            </div>
+            <div class="flex work-cards">
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/book-online.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Book Online</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="card-button">
+                            <button>Read More</button> 
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/payment.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Payment</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="card-button">
+                            <button>Read More</button> 
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/get-ticket.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Get Ticket</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="card-button">
+                            <button>Read More</button> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Work Section Ends Here-->
+
+    <!--Services Section Starts Here-->
+    <section class="container">
+        <div class="row flex services">
+            <div class="section-head">
+                <h2>Best Service Cars</h2>
+                <p>
+                    Lorem Ipsum, or lipsum as it is sometimes known,
+                    <br> 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div class="flex services-cards">
+                
+                <div class="flex card">
+                    <div class="card-image">
+                        <img src="images/bus-1.png" alt="Image bus">
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <th>Bus name</th>
+                                <td><h3>Olivea Volvo</h3></td>
+                            </tr>
+                            <tr>
+                                <th>Features</th>
+                                <td>
+                                    <ul>
+                                        <li>2-1 seats configuration</li>
+                                        <li>Free WiFi</li>
+                                        <li>Extra leg spacing</li>
+                                        <li>GPS enabled</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Rating</th>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 90%;"><span>4.5</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="flex card">
+                    <div class="card-image">
+                        <img src="images/bus-4.png" alt="Image bus">
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <th>Bus name</th>
+                                <td><h3>Volvo 9900 Luxury</h3></td>
+                            </tr>
+                            <tr>
+                                <th>Features</th>
+                                <td>
+                                    <ul>
+                                        <li>2-1 seats configuration</li>
+                                        <li>Free WiFi</li>
+                                        <li>Extra leg spacing</li>
+                                        <li>GPS enabled</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Rating</th>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 80%;"><span>4</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Services Section Ends Here-->
+
+    <!--Testimonial Section Starts Here-->
+    <section class="container">
+        <div class="row flex testimonial">
+            <div class="flex testimonial-head"><h2>Testimonial</h2></div>
+            <div class="flex testimonial-content">
+                <div class="flex testimonial-content-image"><img src="images/bus-interior.png" alt=""></div>
+                <div class="flex testimonial-content-card">
+                    <h3> &OpenCurlyDoubleQuote; </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat rem dicta 
+                        impedit tempore fuga doloribus culpa. mollitia atque autem.
+                    </p>
+                    <div class="flex card-user">
+                        <div class="card-image"><img src="images/testimonial-user.png" alt=""></div>
+                        <div class="card-content"><h4>Muhammad Ammad</h4><h5>Traveller</h5></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex testimonial-companies">
+                <img src="images/paypal.png" alt="">   
+                <img src="images/visa.png" alt="">
+                <img src="images/mastercard.png" alt="">
+                <img src="images/union-pay.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Testimonial Section Ends Here-->
+
+    <!--Footer Section Starts Here-->
+    <footer class="container">
+        <section class="top">
+            <div class="row flex top-content">
+                <div class="flex newsletter">
+                    <h2>Book a trip to our Newsletter</h2>
+                    <div class="newsletter-form">
+                        <form class="flex" action="">
+                            <div class="form-control">
+                                <input type="email" placeholder="Enter your email address" required>
+                            </div>
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="bottom-content">
+                <div class="col address">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo"><h1><span>H.A.Y.</span> Travels</h1>
+                    </div>
+                    <div><p>37M North Band Road,<br>Lahore, Punjab, Pakistan</p></div>
+                </div>
+                <div class="col support">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="#" class="link">Privacy & Policy</a></li>
+                        <li><a href="#" class="link">Terms & Condition</a></li>
+                        <li><a href="#" class="link">Support System</a></li>
+                    </ul>
+                </div>
+                <div class="col links">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#" class="link">How it works</a></li>
+                        <li><a href="#" class="link">Service</a></li>
+                        <li><a href="#" class="link">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col social">
+                    <h2>Contact Us</h2>
+                    <a href="mailto: info@haytravels.com" class="link">info@haytravels.com</a>
+                    <div class="social-icons">
+                        <a href=""><img src="icons/facebook.png" alt=""></a>
+                        <a href=""><img src="icons/twitter.png" alt=""></a>
+                        <a href=""><img src="icons/instagram.png" alt=""></a>
+                        <a href=""><img src="icons/linkedin.png" alt=""></a>
+                        <a href=""><img src="icons/youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright &copy; 2022 H.A.Y. Travels All Rights Reserved</span>
+            </div>
+        </section>
+    </footer>
+    <!--Footer Section Ends Here-->
 </body>
 </html>

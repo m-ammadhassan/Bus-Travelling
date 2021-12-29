@@ -74,14 +74,14 @@
     font-size-adjust: 0 0 0 0 0;
 }
 
-.card-user
+.testimonial-content-card .card-user
 {
     width: 100%;
     justify-content: start;
     margin: 20px 0 0 0;
 }
 
-.card-image
+.testimonial-content-card .card-image
 {
     background-color: orangered;
     height: 80px;
@@ -90,19 +90,19 @@
     margin: 0 20px 0 0;
 }
 
-.card-image img{
+.testimonial-content-card .card-image img{
     width: inherit;
     height: inherit;
     border-radius: inherit;
 }
 
-.card-content h4
+.testimonial-content-card .card-content h4
 {
     font-size: 1.25em;
     margin: 0 0 10px 0;
 }
 
-.card-content h5
+.testimonial-content-card .card-content h5
 {
     font-size: 1em;
     color: #636e72;
@@ -174,13 +174,13 @@
         max-width: 90%;
         max-height: 90%;
     }
-    .card-user
+    .testimonial-content-card .card-user
     {
         flex-direction: column;
         text-align: center;
     }
 
-    .card-content
+    .testimonial-content-card .card-content
     {
         margin-top: 10px;
     }
