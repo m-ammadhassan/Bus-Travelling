@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/*------------Default CSS Starts Here------------*/
 *
 {
     margin: 0;
@@ -19,7 +20,7 @@ body
 
 .row
 {
-    padding: 50px 120px;
+    padding: 0 120px;
 }
 
 .flex
@@ -33,19 +34,127 @@ body
 .link
 {
     color: whitesmoke;
+    display: block;
     text-decoration: none;
 }
 
-/*Header Section Starts Here*/
+.paragraph
+{
+    color: whitesmoke;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.heading-two
+{
+    color: whitesmoke;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.heading-three
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.section
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-head
+{
+    text-align: center;
+}
+
+.section-head h2, .section-head p
+{
+    color: black;
+}
+
+.button
+{
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/*Website Logo*/
+.logo img
+{
+    width: 250px;
+}
+
+/*Social Icons*/
+.social-icons
+{
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icons a
+{
+    margin: 0 3px;
+}
+
+.social-icons a img
+{
+    width: 30px;
+    height: 30px;
+}
+
+/*Cards*/
+.cards-container
+{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card
+{
+    max-width: 30%;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+.card-image img
+{
+    width: 100%;
+}
+
+.card-content
+{
+    padding: 20px;
+}
+
+.card-content h3, .card-content p
+{
+    color: black;
+}
+
+.card-content button
+{
+    text-transform: capitalize;
+}
+
+/*------------Default CSS Ends Here------------*/
+
+/*------------Navigation Bar Starts Here------------*/
 nav
 {
     background: linear-gradient(#2e3235, #222f3e);
-    height: 15vh;
-}
-
-nav.row
-{
-    padding: 0 120px;
+    height: 20vh;
+    width: 100%;
 }
 
 nav.flex
@@ -53,34 +162,12 @@ nav.flex
     justify-content: space-between;
 }
 
-.logo img
-{
-    width: 60px;
-    height: 60px;
-    margin: 0 20px 0 0;
-    /*margin: top right bottom left */
-}
-
-.logo h1
-{
-    color: orangered;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.logo h1 span
-{
-    display: block;
-    color: whitesmoke;
-    margin-top: -8px;
-}
-
 .menu a
 {
+    display: inline;
     font-size: 1.1em;
     text-transform: uppercase;
     padding: 10px 20px;
-    /*padding: top+bottom   right+left*/
 }
 
 .menu .active, .menu a:hover:not(.active)
@@ -100,15 +187,22 @@ nav.flex
     display: none;
 }
 
-.main
+.dropdown a
+{
+    font-size: 2.5em;
+}
+/*------------Navigation Bar Ends Here------------*/
+
+/*------------Header Section Starts Here------------*/
+.header
 {
     background-image: url('images/bus.jpg');
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    height: 80vh;
 }
 
-.main-content
+.header-content
 {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
@@ -117,26 +211,24 @@ nav.flex
     text-align: center;
 }
 
-.main-content h1
+.header-content h1
 {
     color: white;
     font-size: 3em;
     margin: 0 0 50px 0;
 }
 
-.main-content p
-{
-    color: white;
-    font-size: 1.25em;
-    margin: 0 0 20px 0;
-}
-
+/*Booking Form*/
 .booking-form
 {
     width: 100%;
     margin: 0 0 50px 0;
 }
 
+.booking-form form
+{
+    width: 100%;
+}
 
 .booking-form select, .booking-form input
 {
@@ -167,181 +259,78 @@ nav.flex
 .booking-form button
 {
     width: 180px;
-    padding: 10px 0;
     margin: 0 0 0 5px;
-    font-size: 1.1em;
-    background-color: orangered;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 2px solid orangered;
-    cursor: pointer;
 }
+/*------------Header Section Ends Here------------*/
 
-/*Header Section Ends Here*/
-
-
-
-/*Work Section Starts Here*/
-.work
+/*------------Work Section Starts Here------------*/
+.work-cards .card
 {
-    height: inherit;
-    justify-content: space-evenly;
-}
-
-.section-head
-{
-    text-align: center;
-}
-
-.section-head h2
-{
-    font-size: 2.25em;
-    font-weight: bold;
-}
-
-.section-head p
-{
-    font-size: 1.25em;
-    line-height: 1.2;
-    margin: 20px 0;
-}
-
-.work-cards
-{
-    width: 100%;
-    justify-content: space-between;
-}
-
-.card
-{
-    max-width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 
-.card-image img
+.work-cards .card-image img
 {
-    width: 100%;
-    height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.card-content
+.work-cards .card-content button
 {
-    padding: 10px 20px;
-}
-
-.card-content h3
-{
-    font-size: 1.5em;
-    margin: 10px 0 0 0;
-}
-
-.card-content p
-{
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.card-button
-{
-    margin: 20px 0 10px 0;
-}
-
-.card-button button
-{
-    background-color: orangered;
-    color: whitesmoke;
-    font-size: 1em;
-    display: block;
-    border: 2px solid orangered;
     border-radius: 5px;
-    padding: 8px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+/*------------Work Section Ends Here------------*/
 
-/*Work Section Ends Here*/
-
-
-
-/*Services Section Starts Here*/ 
-
-.services
-{
-    height: inherit;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.section-head
-{
-    width: 100%;
-    text-align: center;
-}
-
-.section-head h2
-{
-    font-size: 2.25em;
-    font-weight: bold;
-}
-
-.section-head p
-{
-    font-size: 1.25em;
-    line-height: 1.2;
-    margin: 20px 0;
-}
-
-.services-cards
-{
-    width: 100%;
-    justify-content: space-between;
-}
-
-.services-cards .card
+/*------------Services Section Starts Here------------*/
+.service-cards .card
 {
     max-width: 45%;
 }
 
-.services-cards .card-image img
+.service-cards .card-image img
 {
-    width: 100%;
-    height: 100%;
     border-radius: 10px;
 }
 
-.services-cards .card-content
+.service-cards .card-content
 {
-    max-width: 80%;
-    margin-top: -80px;
     background-color: whitesmoke;
+    max-width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
     border-radius: 10px;
+    margin: auto;
+    margin-top: -100px;
 }
 
-.services-cards .card-content table
+.row-one, .row-two, .row-three
 {
     width: 100%;
-    padding: 25px;
+    justify-content: flex-start;
 }
 
-.services-cards .card-content table th
+.row-one p, .row-two p, .row-three p
 {
-    width: 30%;
-    text-align: left;
+    width: 25%; 
+    font-weight: bold;
 }
 
-.services-cards .card-content table td ul
+.row-two ul
 {
-    margin: 0 0 0 20px;
+    margin-left: 25px;
 }
 
+/*Progress Bar Starts Here*/
 .progress-bar
 {
     background-color: #ecf0f1;
-    width: 100%;
+    width: 70%;
     height: 26px;
+    display: inline;
     border: 2px solid #242323;
     border-radius: 10px;
     margin: 4px 0 0 0;
@@ -363,196 +352,107 @@ nav.flex
     color: whitesmoke;
     font-weight: bold;
 }
+/*Progress Bar Ends Here*/
+/*------------Services Section Ends Here------------*/
 
-/*Services Section Ends Here*/
-
-
-/*Testimonial Section Starts Here*/
-.testimonial
-{
-    height: inherit;
-    justify-content: space-evenly;
-}
-
-.testimonial-head h2
-{
-    font-size: 2.25em;
-    font-weight: bold;
-    margin-top: 40px;
-}
-
+/*------------Testimonial Section Starts Here------------*/
 .testimonial-content
 {
     width: 100%;
-    flex-wrap: nowrap;
+    margin: 20px 0;
 }
-.testimonial-content-image
+
+.testimonial-image
 {
-    max-width: 40vw;
+    max-width: 40%;
 }
-.testimonial-content-image img
+
+.testimonial-image img
 {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
 }
-.testimonial-content-card
+
+.testimonial-data
 {
-    max-width: 60vw;
-    flex-direction: row;
-    justify-content: start;
-    padding: 20px 80px;
-}
-.testimonial-content-card h3
-{
-    color: #FFDB58;
-    font-size: 4em;
-    font-size-adjust: 0 0 0 0 0;
+    max-width: 60%;
+    padding: 20px;
 }
 
-.testimonial-content-card .card-user
+.testimonial-data h4
 {
-    width: 100%;
-    justify-content: start;
-    margin: 20px 0 0 0;
+    color: #ffdb58;
+    font-size: 5em;
 }
 
-.testimonial-content-card .card-image
+.testimonial-data p
 {
-    background-color: orangered;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    margin: 0 20px 0 0;
-}
-
-.testimonial-content-card .card-image img{
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-}
-
-.testimonial-content-card .card-content h4
-{
-    font-size: 1.25em;
-    margin: 0 0 10px 0;
-}
-
-.testimonial-content-card .card-content h5
-{
-    font-size: 1em;
-    color: #636e72;
-}
-
-.testimonial-content-card p
-{
-    font-size: 1.25em;
+    color: black;
+    margin-top: -20px;
     text-align: justify;
 }
+
+.testimonial-card
+{
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.testimonial-card .card-image img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-card .card-content h3
+{
+    margin-bottom: 10px;
+}
+
+.testimonial-card .card-content h5
+{
+    font-size: 1em;
+}
+
 .testimonial-companies
 {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .testimonial-companies img
 {
-    max-width: 150px;
+    max-width: 180px;
 }
+/*------------Testimonial Section Ends Here------------*/
 
-/*Testimonial Section Ends Here*/
-
-
-
-.col
-{
-    min-width: 25%;
-    display: flex;
-    flex-direction: column;
-}
-
-.col h2
-{
-    color: whitesmoke;
-    font-size: 1.5em;
-    word-spacing: 4px;
-}
-
-.col ul
-{
-    margin: 15px 0 0 0;
-}
-
-.col li
-{
-    list-style: none;
-    margin: 15px 0 0 0;
-}
-
-.col a
-{
-    color: #8c929b;
-    font-size: 1.25em;
-}
-
-.link
-{
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.social-icons
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
-}
-
-.social-icons a
-{
-    margin: 0 5px;
-}
-
-.social-icons a img
-{
-    max-height: 4vh;
-}
-
-/*Footer Section Starts Here*/
-footer .top
-{
-    height: 50vh;
-    background: url('images/bus-terminal.jpg');
-    background-size: 100% 120%;  /*background-size: width height;*/
-    background-position: top;
-}
-
-.top-content
-{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: flex-end;
-}
-
+/*------------Newsletter Starts Here------------*/
 .newsletter
 {
-    width: 45%;
-    height: 60%;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    padding: 20px;
+    height: 50vh;
+    background: url('images/bus-station.png');
+    background-size: cover;
+    background-position: center;
 }
 
+.newsletter-content
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    justify-content: flex-end;
+    padding: 20px inherit;
+}
+
+/*Newsletter Form*/
 .newsletter-form
 {
-    width: 100%;
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
 }
 
 .newsletter-form form
@@ -560,103 +460,256 @@ footer .top
     width: 100%;
 }
 
-.form-control
+.newsletter-form h2.heading-three
 {
-    width: 70%;
+    color: black;
 }
 
-.form-control input
+.newsletter-form input
 {
-    width: 100%;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 8px;
+    width: 70%;
+    font-size: 1.1em;
+    padding: 10px;
+    outline: none;
 }
 
 .newsletter-form button
 {
     width: 20%;
-    padding: 8px;
-    display: block;
+}
+
+/*------------Newsletter Ends Here------------*/
+
+/*------------Footer Starts Here------------*/
+.footer
+{
+    height: 50vh;
+    background-color: #222f3e;
+}
+
+.footer-content
+{
+    height: 42vh;
+    padding: 10px 70px;
+}
+
+.footer-content-one, .footer-content-two
+{
+    width: 50%;
+}
+
+.col
+{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.col a
+{
+    margin: 5px 0;
+}
+
+/*Copyright*/
+.copyright
+{
+    height: 8vh;
     background-color: orangered;
     color: whitesmoke;
-    font-size: 1em;
-    border: 2px solid orangered;
+}
+/*------------Footer Ends Here------------*/
+
+/*----------------------------------------------*/
+/*------------About Page Starts Here------------*/
+
+/*About Us Page Defaul CSS*/
+.intro, .leader
+{
+    background-color: #dfe6e9;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-footer .bottom
+/*About Us Section Starts Here*/
+.intro-content, .leader-content
 {
-    min-height: 50vh;
-}
-
-.bottom .bottom-content
-{
-    min-height: 40vh;
-    background-color: #222f3e;
-    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
     padding: 40px;
 }
 
-.address
-{
-    align-items: center;
-}
-
-.logo img
-{
-    width: 200px;
-    margin: 0 20px 0 0;
-    /*margin: top right bottom left */
-}
-
-.logo h1
-{
-    color: orangered;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.logo h1 span
-{
-    display: block;
-    color: whitesmoke;
-    margin-top: -8px;
-}
-
-.address p
-{
-    color: whitesmoke;
-    font-size: 1.25em;
-    line-height: 1.4;
-    margin: 10px 0 0 0;
-}
-
-.support, .links, .social
-{
-    align-items: center;
-}
-
-
-.social > a
-{
-    margin: 30px 0 5px 0;
-}
-
-.bottom .copyright
+.mission, .about
 {
     text-align: center;
-    padding: 0 20px;
-    min-height: 10vh;
-    background-color: orangered;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.copyright span
+.mission h2, .about h2, .mission p, .about p
+{
+    color: black;
+}
+
+.about p
+{
+    text-align: justify;
+}
+/*About Us Section Ends Here*/
+
+/*Leadership Section Starts Here*/
+.leader-cards .card
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.leader-cards .card .card-image
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.leader-cards .card .card-image img
+{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.leader-cards .card .card-content
+{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.leader-cards .card .card-content h3, .leader-cards .card .card-content h5
+{
+    margin-bottom: 8px;
+}
+
+.leader-cards .card .card-content h3
+{
+    font-size: 1.3em;
+}
+
+.leader-cards .card .card-content h5
+{
+    font-size: 1em;
+}
+
+.leader-cards .card .social-icons
+{
+    justify-content: space-evenly;
+}
+/*Leadership Section Ends Here*/
+
+/*------------About Page Ends Here------------*/
+/*--------------------------------------------*/
+
+/*------------------------------------------------*/
+/*------------Contact Page Starts Here------------*/
+
+/*Contact Section Starts Here*/
+.contact
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-form
+{
+    width: 50%;
+    border: 2px solid orangered;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px;
+}
+
+.contact-info
+{
+    width: 50%;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.contact-form h2
+{
+    color: black;
+}
+
+.contact-form input, .contact-form textarea
+{
+    width: 100%;
+    font-size: 1em;
+    border: 2px solid #afb1b3;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    margin: 0 0 15px 0;
+    outline: none;
+    resize: none;
+}
+
+.contact-form textarea
+{
+    font-size: 16px;
+}
+
+.contact-form button
+{
+    display: block;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+/*Contact Information*/
+.contact-info
+{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-item
+{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-logo
+{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 105, 51);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact-logo img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.contact-text
 {
     color: whitesmoke;
-    font-size: 1.1em;
+    font-size: 1em;
 }
-/*Footer Section Ends Here*/
 
+.contact-text span
+{
+    font-weight: bolder;
+}
+
+.contact-text p, .contact-text a
+{
+    display: inline;
+}
+/*Contact Section Ends Here*/
+
+/*------------Contact Page Ends Here------------*/
+/*----------------------------------------------*/
