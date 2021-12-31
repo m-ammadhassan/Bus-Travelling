@@ -1,13 +1,13 @@
 function dropdown()
-{    
-    var x = document.getElementById("menu");
-    if(x.className === "")
+{
+    var y = document.getElementById("nav-bar");
+    if(y.className === "row flex nav-bar")
     {
-        x.className += "menu-responsive";
+        y.className += "-responsive";
     }
     else
     {
-        x.className = "";
+        y.className = "row flex nav-bar";
     }
 }
 
@@ -18,22 +18,36 @@ function dropdownReset()
 }
 
 
+let bookingButton = document.querySelector('#booking-btn');
+let arrival = document.querySelector('#arrival_city');
+let departure = document.querySelector('#departure_city');
+let date = document.querySelector('#booking_date');
 
-function booking()
-{
-    let arrivalCity = document.getElementById("arrival_city");
-    let departureCity = document.getElementById("departure_city");
-    console.log(arrivalCity);
-    console.log(departureCity);
+bookingButton.addEventListener('click', () => {
+    let arrivalCity = arrival.value;
+    let departureCity = departure.value;
+    let travelDate = date.value;
 
-    if(arrivalCity !== departureCity)
+    if(arrivalCity === departureCity)
     {
-        alert("Your booking is confirmed");
-    
+        alert("Arrival City and Departure City cannot be same");
+    }
+    else if(arrivalCity == "arrival")
+    {
+        alert("Please select Arrival City");
+    }
+    else if(departureCity == "departure")
+    {
+        alert("Please select Departure City");
+    }
+    else if(travelDate == "select_date")
+    {
+        alert("Please select Travelling Date")
     }
     else
     {
-        alert("You cannot select same Departure City or Arrival City");
+        alert("Your Booking From " + departureCity + " To " + arrivalCity + " On " + travelDate + " is Confirmed");
     }
-}
+    console.log(arrivalCity);
+})
 

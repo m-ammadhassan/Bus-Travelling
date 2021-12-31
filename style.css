@@ -124,7 +124,6 @@ body
 {
     max-width: 30%;
     border-radius: 10px;
-    background-color: burlywood;
 }
 
 .card-image img
@@ -167,6 +166,7 @@ nav.flex
     display: inline;
     font-size: 1.1em;
     text-transform: uppercase;
+    border: 2px solid transparent;
     padding: 10px 20px;
 }
 
@@ -322,6 +322,11 @@ nav.flex
 .row-two ul
 {
     margin-left: 25px;
+}
+
+.row-two ul li
+{
+    margin: 4px 0;
 }
 
 /*Progress Bar Starts Here*/
