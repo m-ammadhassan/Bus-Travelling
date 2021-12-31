@@ -560,6 +560,10 @@ nav.flex
 /*About Us Section Ends Here*/
 
 /*Leadership Section Starts Here*/
+.leader-cards
+{
+    align-items: stretch;
+}
 .leader-cards .card
 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
