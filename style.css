@@ -684,6 +684,7 @@ nav.flex
 }
 .contact-item
 {
+    width: 100%;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -705,6 +706,7 @@ nav.flex
 
 .contact-text
 {
+    width: 70%;
     color: whitesmoke;
     font-size: 1em;
 }

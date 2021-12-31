@@ -51,3 +51,34 @@ bookingButton.addEventListener('click', () => {
     console.log(arrivalCity);
 })
 
+
+let newsletterButton = document.querySelector('#newsletter');
+
+newsletterButton.addEventListener('click', () => {
+    let email = document.querySelector('#email');
+    let userEmail = email.value;
+    if(userEmail != "")
+    {
+        alert("Dear user your email: " + userEmail + " is subscribed to our Newsletter");
+    }
+});
+
+let contactButton = document.querySelector('#contact-btn');
+
+contactButton.addEventListener('click', () => {
+    let fullname = document.querySelector('#form-name');
+let email = document.querySelector('#form-email');
+let subject = document.querySelector('#form-subject');
+let message = document.querySelector('#form-message');
+    let userEmail = email.value;
+    let userName = fullname.value;
+    let userSubject = subject.value;
+    let userMessage = message.value;
+
+    if(userName != "")
+    {
+        alert("Dear " + userName + " your message has been received. We will contact back you soon.");
+    }
+
+});
+
