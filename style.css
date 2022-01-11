@@ -87,6 +87,12 @@ body
     cursor: pointer;
 }
 
+.button:hover
+{
+    background-color: transparent;
+    color: orangered;
+}
+
 /*Website Logo*/
 .logo img
 {
@@ -260,6 +266,13 @@ nav.flex
 {
     width: 180px;
     margin: 0 0 0 5px;
+}
+
+.booking-form button:hover
+{
+    background-color: rgb(197, 53, 0);
+    border: 2px solid rgb(197, 53, 0);
+    color: whitesmoke;
 }
 /*------------Header Section Ends Here------------*/
 
