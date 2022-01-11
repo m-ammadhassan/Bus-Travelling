@@ -92,7 +92,7 @@
     .leader-cards
     {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .leader-cards .card
